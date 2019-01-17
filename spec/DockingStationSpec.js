@@ -5,4 +5,9 @@ describe("DockingStation", () => {
     expect(dockingStationOne instanceof DockingStation).toBe(true);
   });
 
+  it("reponds to the .dockedBikes method", () => {
+    var dockingStationOne = new DockingStation();
+    expect(dockingStationOne.dockedBikes()).toBeDefined();
+  });
+
 });
