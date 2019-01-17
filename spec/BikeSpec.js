@@ -1,3 +1,7 @@
+/* global describe, it, expect, beforeEach */
+
+'use strict'
+
 describe("Bike", () => {
 
   it("instance of Bike can be stored as a variable", () => {

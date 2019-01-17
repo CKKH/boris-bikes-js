@@ -1,3 +1,4 @@
-function Bike() {
+'use strict'
 
+function Bike() {
 }

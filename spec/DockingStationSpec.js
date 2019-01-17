@@ -1,4 +1,10 @@
+/* global describe, it, expect, beforeEach */
+
+'use strict'
+
 describe("DockingStation", () => {
+  let dockingStationOne;
+  let bike;
 
   beforeEach( () => {
     dockingStationOne = new DockingStation();
