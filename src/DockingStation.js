@@ -1,7 +1,7 @@
 function DockingStation() {
-
+  this._dockedBikes = [];
 }
 
 DockingStation.prototype.dockedBikes = function() {
-  return "bike"
+  return this._dockedBikes;
 }
