@@ -2,6 +2,7 @@ describe("DockingStation", () => {
 
   beforeEach( () => {
     dockingStationOne = new DockingStation();
+    bike = jasmine.createSpy('bike')
   });
 
   it("instance of DockingStation can be stored as a variable", () => {
@@ -13,7 +14,6 @@ describe("DockingStation", () => {
   });
 
   it("stores a bike in it's array after .dock(bike) called", () => {
-    var bike = new Bike();
     dockingStationOne.dock(bike);
     expect(dockingStationOne.dockedBikes()).toContain(bike);
   });
