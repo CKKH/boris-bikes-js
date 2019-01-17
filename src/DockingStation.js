@@ -11,5 +11,5 @@ DockingStation.prototype.dock = function(bike) {
 }
 
 DockingStation.prototype.release = function(bike) {
-  return 'popped bike'
+  return this._dockedBikes.pop(bike);
 }

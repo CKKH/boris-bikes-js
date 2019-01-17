@@ -24,7 +24,7 @@ describe("DockingStation", () => {
 
   it("releases a docked bike from it's array after .release(bike) called", () => {
     dockingStationOne.dock(bike);
-    dockingStationOne.release(bike)
+    dockingStationOne.release(bike);
     expect(dockingStationOne.dockedBikes()).not.toContain(bike);
   });
 
