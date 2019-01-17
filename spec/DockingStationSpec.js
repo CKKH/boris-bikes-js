@@ -12,4 +12,9 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dockedBikes()).toEqual([]);
   });
 
+  it("responds to the .dock(bike) method", () => {
+    var bike = new Bike();
+    expect(dockingStationOne.dock(bike)).toBeDefined();
+  });
+
 });
