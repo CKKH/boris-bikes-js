@@ -18,10 +18,6 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dockedBikes()).toContain(bike);
   });
 
-  it("responds to the .release(bike) method", () => {
-    expect(dockingStationOne.release(bike)).toBeDefined();
-  });
-
   it("releases a docked bike from it's array after .release(bike) called", () => {
     dockingStationOne.dock(bike);
     dockingStationOne.release(bike);
