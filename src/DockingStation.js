@@ -7,5 +7,5 @@ DockingStation.prototype.dockedBikes = function() {
 }
 
 DockingStation.prototype.dock = function(bike) {
-  return "bike";
+  return this._dockedBikes.push(bike);
 }
