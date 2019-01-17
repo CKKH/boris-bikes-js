@@ -17,4 +17,10 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dock(bike)).toBeDefined();
   });
 
+  it("stores a bike in it's array after .dock(bike) called", () => {
+    var bike = new Bike();
+    dockingStationOne.dock(bike);
+    expect(dockingStationOne.dockedBikes()).toContain(bike);
+  });
+
 });
