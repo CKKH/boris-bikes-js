@@ -12,4 +12,8 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dockedBikes()).toBeDefined();
   });
 
+  it("returns an array of docked bikes when .dockedBikes called", () => {
+    expect(dockingStationOne.dockedBikes()).toEqual([]);
+  });
+
 });
