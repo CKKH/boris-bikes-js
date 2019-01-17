@@ -12,11 +12,6 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dockedBikes()).toEqual([]);
   });
 
-  it("responds to the .dock(bike) method", () => {
-    var bike = new Bike();
-    expect(dockingStationOne.dock(bike)).toBeDefined();
-  });
-
   it("stores a bike in it's array after .dock(bike) called", () => {
     var bike = new Bike();
     dockingStationOne.dock(bike);
