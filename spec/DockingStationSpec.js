@@ -18,4 +18,8 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dockedBikes()).toContain(bike);
   });
 
+  it("responds to the .release(bike) method", () => {
+    expect(dockingStationOne.release(bike)).toBeDefined();
+  });
+
 });
