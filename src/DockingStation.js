@@ -13,5 +13,10 @@ DockingStation.prototype.dock = function(bike) {
 }
 
 DockingStation.prototype.release = function(bike) {
-  return this._dockedBikes.pop(bike);
+  if (this._dockedBikes.length === 0) {
+    var error = "Cannot release bike: dockingStation empty";
+    throw new Error(error);
+  } else if (this._dockedBikes.length >= 0) {
+    return this._dockedBikes.pop(bike);
+  }
 }

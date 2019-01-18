@@ -30,4 +30,9 @@ describe("DockingStation", () => {
     expect(dockingStationOne.dockedBikes()).not.toContain(bike);
   });
 
+  it("raises error if .release(bike) called when dockingStation empty", () => {
+    var error = "Cannot release bike: dockingStation empty"
+    expect(function() { dockingStationOne.release(bike) }).toThrow(new Error(error));
+  });
+
 });
